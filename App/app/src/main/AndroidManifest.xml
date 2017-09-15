@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bg.bg">
+
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Congress"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Congress"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <!-- 决定了App的第一个Act，栈底Act -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CommDetailActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".BillDetailAvtivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".LegiDetailActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+    </application>
+
+</manifest>

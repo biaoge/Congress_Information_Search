@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--Legislators头像-->
+    <ImageView
+        android:id="@+id/legi_simg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:baselineAlignBottom="true"
+        android:paddingLeft="8dp"
+        android:src="@drawable/ic_menu_camera"/>
+<!--Legislator基本信息-->
+    <LinearLayout
+        android:layout_toRightOf="@id/legi_simg"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/legi_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="HAHA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/legi_secline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="secondline"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+<!--右箭头-->
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:paddingTop="16dp"
+        android:layout_alignParentRight="true"
+        android:baselineAlignBottom="true"
+        android:paddingRight="8dp"
+        android:src="@drawable/forward"/>
+
+</RelativeLayout>
