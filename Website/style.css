@@ -1,0 +1,240 @@
+.topbar {
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+
+
+/*sidebar CSS regular screen*/
+.navbar-fixed-left {
+  width: 11%;
+  position: fixed;
+  top: 50px;
+  border-radius: 0;
+  height: 100%;
+  transition: width 0.5s;
+}
+
+.navbar-fixed-left .navbar-nav {
+      width: 100%;
+    }
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 100%;
+  transition: width 0.5s;
+}
+
+/*.navbar-fixed-left + .container {
+  padding-left: 160px;
+}*/
+
+/*sidebar CSS small screen*/
+@media screen and (max-width: 768px) {
+    .navbar-fixed-left {
+    width: 11%;
+    position: fixed;
+    top: 50px;
+    border-radius: 0;
+    height: 100%;
+    transition: width 0.5s;
+    }
+    
+    .navbar-fixed-left .navbar-nav {
+      width: 100%;
+      margin: 0px;
+    }
+
+    .navbar-fixed-left .navbar-nav > li {
+      float: none;  /* Cancel default li float: left */
+      width: 100%;
+      transition: width 0.5s;
+    }
+
+    .navbar-fixed-left .navbar-nav > li > a {
+    text-align:center;
+    }
+    
+    .navbar-fixed-left .navbar-nav > li > a > span {
+        display: none;
+    }
+    
+    .navbar-fixed-left .navbar-nav > li > a > i {
+        font-size: 120%;
+    }
+  
+    #ShowBlock {
+      margin-left: 10%;
+      margin-top: 60px;
+    }
+
+    .hidetd {
+      display: none;
+    }
+
+    .border1 {
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(221,221,221);
+    }
+
+}
+
+/*sidebar CSS middle screen*/
+@media screen and (min-width :769px) and (max-width: 1400px) {
+    .navbar-fixed-left {
+    width: 11%;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+    transition: width 0.5s;
+    }
+    
+    .navbar-fixed-left .navbar-nav > li {
+      float: none;  /* Cancel default li float: left */
+      width: 100%;
+      transition: width 0.5s;
+    }
+
+    .navbar-fixed-left .navbar-nav {
+      width: 100%;
+    }
+    
+    #ShowBlock {
+      margin-left: 12%;
+      margin-top: 60px;
+    }
+}
+
+
+
+#ShowBlock {
+  margin-left: 12%;
+  margin-top: 60px;
+}
+
+
+
+/*Font CSS*/
+.SidebarFont {
+    font-size: 15px;
+}
+
+
+
+.padd {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paddH {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+/*font CSS*/
+.fontSizeSmall {
+  font-size: 15px;
+}
+
+.fontSize {
+  font-size: 20px;
+}
+
+
+
+/*pagination CSS*/
+.pagi2-controller {
+  padding: 5px;
+  margin: 3px;
+}
+.pagi2-controller small {
+  color: #99c;
+}
+
+
+
+/*image CSS*/
+.square {
+  width: 25px;
+  height: 25px;
+}
+
+.legislatorimage {
+  width: 225px;
+  height: 275px;
+}
+
+.square30 {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+/*toggable CSS*/
+.ng-hide {
+      height: 0;
+      width: 0;
+      background-color: transparent;
+      top:60px;
+      left: 0px;
+      display: none;
+}
+
+.tog {
+      transition: width 0.5s;
+      background-color: lightblue;
+      height: 100px;
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+}
+
+
+
+/*hr tag CSS*/
+hr {
+    height: 1px;
+    background-color:rgb(198,198,198);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+
+/*body tag CSS*/
+body
+{
+  background-color: rgb(238,238,238);
+  font-family: Trebuchet MS; 
+}
+
+
+
+/*Favorite button CSS*/
+.color {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#flred:hover {
+  color: red;
+}
+#fbred:hover {
+  color: red;
+}
+#fcred:hover {
+  color: red;
+}
